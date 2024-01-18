@@ -1,8 +1,8 @@
-from flask import Flask, request, render_template
 from pickle import load
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
-model = load(open("/workspaces/NEW_flask/models/decision_tree_classifier_default_42.sav", "rb"))
+model = load(open("/workspaces/Ml_Flask1/models/decision_tree_classifier_default_42.sav", "rb"))
 class_dict = {
     "0": "Iris setosa",
     "1": "Iris versicolor",
